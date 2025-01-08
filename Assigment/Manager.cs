@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Assigment
 {
-    internal class Manager
+    internal class Manager : Employee
     {
+
+        public override void Work()
+        {
+
+            base.Work();
+            Console.WriteLine("Manager is managing");
+
+        }
+
+
     }
 }
