@@ -1,4 +1,7 @@
-﻿namespace OOP03
+﻿using OOP03.Operators_Overloading;
+using System.Numerics;
+
+namespace OOP03
 {
     internal class Program
     {
@@ -35,6 +38,25 @@
             //Console.WriteLineChar();
             //Console.WriteLineInt();
             //Console.WriteLineBoolean(); 
+
+            #endregion
+
+
+            #region Operators Overloading - Binary Operators
+
+            ComplexNumber C1 = new ComplexNumber() { Real = 2, Imag = 4 };
+            ComplexNumber C2 = new ComplexNumber() { Real = 3, Imag = 5 };
+
+            ComplexNumber C3 =default; //NULL
+
+            C3 = C1 + C2;
+
+            // C2 += C1  ===> C2 = C2 + C1
+
+            Console.WriteLine($"C1 = {C1}");
+            Console.WriteLine($"C2 = {C2}");
+            Console.WriteLine("----------");
+            Console.WriteLine($"C3 = {C3}");
 
             #endregion
         }
