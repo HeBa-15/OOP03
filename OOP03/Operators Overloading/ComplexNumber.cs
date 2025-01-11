@@ -36,6 +36,25 @@ namespace OOP03.Operators_Overloading
         }
 
         #endregion
+
+        #region Unary Operators
+        public static ComplexNumber operator ++(ComplexNumber C)
+        {
+            return new ComplexNumber
+            {
+                Real = (C?.Real ?? 0) + 1,
+                Imag = (C?.Imag ?? 0)
+            };
+        }
+        public static ComplexNumber operator --(ComplexNumber C)
+        {
+            return new ComplexNumber
+            {
+                Real = (C?.Real ?? 0) - 1,
+                Imag = (C?.Imag ?? 0)
+            };
+        } 
+        #endregion
         public override string ToString()
         {
             return $"{Real} + {Imag}i";

@@ -59,6 +59,17 @@ namespace OOP03
             Console.WriteLine($"C3 = {C3}");
 
             #endregion
+
+            #region Unary Operator
+            //Console.WriteLine($"C1 = {C1}");
+
+
+            //Complex C3 = ++C1; Console.WriteLine("After ++C1");
+
+            //Console.WriteLine($"C1 = {C1}");
+            //Console.WriteLine($"C3 = {C3}"); 
+            #endregion
+
         }
     }
 }
