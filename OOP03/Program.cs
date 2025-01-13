@@ -180,7 +180,17 @@ namespace OOP03
             #endregion
 
 
+            #region Not Binding
 
+            //TypeA typeA;
+            //typeA = new TypeA(1);
+            //typeA = new TypeB(1, 2);
+            ////  typeA = new TypeC(1,2,3);
+            //TypeB typeB = (TypeB)typeA;
+            //Console.WriteLine(typeB.A);
+            //Console.WriteLine(typeB.B);
+
+            #endregion
 
         }
     }
