@@ -7,7 +7,7 @@
 
         public int Real { get; set; }
         public int Imag { get; set; }
-
+        
 
         public static ComplexNumber operator +(ComplexNumber left, ComplexNumber right)
         {
