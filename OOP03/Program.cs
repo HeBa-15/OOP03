@@ -1,4 +1,5 @@
 ﻿using OOP03.Operators_Overloading;
+using OOP03.Polymorphism;
 using System.Numerics;
 
 namespace OOP03
@@ -151,6 +152,34 @@ namespace OOP03
             //typeA.MyFun02(); //  TypeB: A = {11} , B = {2} 
 
             #endregion
+
+
+            #region What is Binding
+            // Binding as Behaviour
+            // 1. Static  Binding
+            // 2. Dynamic Binding
+
+            //Reference from Parent = Object from Child
+
+            TypeA RefBase = new TypeB(1, 2);
+            RefBase.A = 11;
+            //RefBase.B = 22;
+
+            RefBase.MyFun01(); //I am Base [Parent]
+            // Static Binding [Early Binding]
+            // Compiler Will Bind Function Call Based On Reference not Object
+            // at Compilation Time
+
+
+            RefBase.MyFun02(); //TypeB: A=11, B=2
+
+            // Dynamic Binding [Late Binding]
+            // CLR Will Bind Function Call Based on Object not Reference
+            // at Runtime
+
+            #endregion
+
+
 
 
         }

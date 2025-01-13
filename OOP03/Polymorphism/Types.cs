@@ -31,10 +31,13 @@ namespace OOP03.Polymorphism
         {
             this.B = B;
         }
+        //1. Apply Overriding Using "new" Keyword
         public new void MyFun01()  /*Static Binding Method*/
         {
             Console.WriteLine(" MyFun01 => Iam Derived [Child]");
         }
+
+        // 2. Apply Overriding Using "override" Keyword [Must be Non-Private Virtual in the 1st]
         public override void MyFun02()  /*Dynamic Binding Method*/
         {
             Console.WriteLine($"MyFun02 => TypeB: A = {A} , B = {B}");
