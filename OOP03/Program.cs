@@ -82,6 +82,8 @@ namespace OOP03
             #endregion
 
 
+
+
             #region Casting Operators
 
             #region Example 01
@@ -106,6 +108,29 @@ namespace OOP03
             #endregion
 
             #endregion
+
+
+            #region Casting Operators Overloading - Business Need [Mapping]
+
+            //User user = new User()
+            //{
+            //    Id = 12345,
+            //    FullName = "Ahmed Nasr ",
+            //    Email = "AhmedNasr43@gmail.com",
+            //    Password = "Password",
+            //    SecurityStmp = Guid.NewGuid()
+            //};
+
+            //// Mapping [Manual] 
+
+            //UserViewModel userViewModel = (UserViewModel)user;
+            //Console.WriteLine(userViewModel.Id);
+            //Console.WriteLine(userViewModel.FName);
+            //Console.WriteLine(userViewModel.LName);
+            //Console.WriteLine(userViewModel.Email);
+            //Console.WriteLine(userViewModel.Password); 
+            #endregion
+
 
         }
     }
