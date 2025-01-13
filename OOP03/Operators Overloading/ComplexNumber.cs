@@ -53,8 +53,32 @@ namespace OOP03.Operators_Overloading
                 Real = (C?.Real ?? 0) - 1,
                 Imag = (C?.Imag ?? 0)
             };
-        } 
+        }
         #endregion
+
+        #region Relational Operators
+
+        public static bool operator >(ComplexNumber Left, ComplexNumber Right)
+        {
+            if (Left?.Real == Right?.Real)
+            {
+                return Left?.Imag > Right?.Imag;
+            }
+            else
+                return Left?.Real > Right?.Real;
+        }
+        public static bool operator <(ComplexNumber Left, ComplexNumber Right)
+        {
+            if (Left?.Real == Right?.Real)
+            {
+                return Left?.Imag < Right?.Imag;
+            }
+            else
+                return Left?.Real < Right?.Real;
+        }
+
+        #endregion
+
         public override string ToString()
         {
             return $"{Real} + {Imag}i";

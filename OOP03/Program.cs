@@ -70,6 +70,17 @@ namespace OOP03
             //Console.WriteLine($"C3 = {C3}"); 
             #endregion
 
+            #region Relational Operator
+
+            //if (C1 > C2)
+            //    Console.WriteLine("C1 is Greater than C2");
+            //else if (C1 < C2)
+            //    Console.WriteLine("C1 is less than C2");
+            //else
+            //    Console.WriteLine("C1 Equals C2");
+
+            #endregion
+
         }
     }
 }
