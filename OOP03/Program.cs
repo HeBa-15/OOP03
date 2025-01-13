@@ -132,6 +132,27 @@ namespace OOP03
             #endregion
 
 
+            #region  OOP Pillars 3. PolyMorphism 2.Overriding
+
+            /// TypeA typeA = new TypeA(1);
+            /// typeA.A = 11;
+            /// typeA.MyFun01(); // Iam Base [Parent]
+            /// typeA.MyFun02(); // TypeA: A = 11
+            /// TypeB typeB = new TypeB(1, 2);
+            /// typeB.A = 11;
+            /// typeB.B = 22;
+            /// typeB.MyFun01(); // I am Derived [Child]
+            /// typeB.MyFun02(); // TypeB: A = {11} , B = {22}
+
+            //TypeA typeA = new TypeB(1, 2);
+            //typeA.A = 11;
+            //typeA.B = 22;
+            //typeA.MyFun01(); // Iam Base [Parent]
+            //typeA.MyFun02(); //  TypeB: A = {11} , B = {2} 
+
+            #endregion
+
+
         }
     }
 }
