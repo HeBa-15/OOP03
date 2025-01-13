@@ -79,6 +79,21 @@ namespace OOP03.Operators_Overloading
 
         #endregion
 
+        #region Casting Operators Overloading
+
+        // Overloading casting operator: Create Non-Private class member Function
+
+        public static /*int*/ explicit operator int(ComplexNumber C)
+        {
+            return C?.Real ?? 0;
+        }
+        public static /*string*/ explicit operator string(ComplexNumber C)
+        {
+            return C?.ToString() ?? string.Empty;
+        }
+
+        #endregion
+
         public override string ToString()
         {
             return $"{Real} + {Imag}i";

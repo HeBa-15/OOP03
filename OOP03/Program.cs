@@ -81,6 +81,32 @@ namespace OOP03
 
             #endregion
 
+
+            #region Casting Operators
+
+            #region Example 01
+
+            //int Y = (int)C1; // Explicit Casting
+            //Console.WriteLine($"Y = {Y}");
+            //object O1 = 5;
+            //int X = (int) O1;
+            //Console.WriteLine(X); 
+
+            #endregion
+
+            #region Example 02
+
+            //string Y = (string) C1; // Explicit Casting
+            //Console.WriteLine($"Y = {Y}");
+
+            //object O1 = "Ahmed";
+            //string X = (string)O1;
+            //Console.WriteLine(X);
+
+            #endregion
+
+            #endregion
+
         }
     }
 }
